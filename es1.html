@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Es1 Training</title>
+    </head>
+    <body>
+        <h1>Es1</h1>
+        <p>Pagina html statica, includi un file javascript, 
+            aggiungi un bottone, aggiungi un click listener al bottone che cambia il contenuto di un 
+            tag span e il contenuto e colore di un div.
+        </p>
+
+        <span id= "span1">C'è un bottone</span>
+        <br><br>
+        <button id= "btn1">Non premere</button>
+        <div id= "div1" style= "background-color: rgb(30, 255, 0)">
+            <h2>Non premere il bottone!</h2>
+            <p>ti ho detto di non premere il maledetto bottone</p>
+        </div>
+
+        <script>
+            var span1 = document.getElementById("span1");
+            console.log("document: ", document);
+            console.log("span1 ", span1);
+            var testo = span1.innerHTML;
+            console.log("testo ", testo);
+            document.getElementById("span1").innerHTML = "CUCU";
+        </script>
+    </body>
+</html>
