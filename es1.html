@@ -14,7 +14,7 @@
         <button id= "btn1">Non premere</button>
         <div id= "div1" style= "background-color: rgb(30, 255, 0)">
             <h2>Non premere il bottone!</h2>
-            <p>Ti ho detto di non premerlo</p>
+            
         </div>
 
         <script>
@@ -23,15 +23,17 @@
             console.log("span1 ", span1);
             var testo = span1.innerHTML;
             console.log("testo ", testo);
-            document.getElementById("span1").innerHTML = "CUCU";
+            
             
             var button=document.getElementById("btn1");
-            button.addEventListener("click", changeColor);
-
             var changeColor=function(){
                 console.log("Buongiornissimo"); 
-                document.getElementById("div1").setAttribute("style", "background-color:  rgb(163, 36, 68)")
+                document.getElementById("div1").setAttribute("style", "background-color:  rgb(163, 36, 68)");
+                span1.innerHTML="CUCU";
+                document.getElementById("div1").innerHTML="<h2>Ti ho detto di non premerlo</h2>";
             }
+            button.addEventListener("click", changeColor);
+            
         </script>
     </body>
 </html>
