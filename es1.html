@@ -24,7 +24,14 @@
             var testo = span1.innerHTML;
             console.log("testo ", testo);
             document.getElementById("span1").innerHTML = "CUCU";
-            document.getElementById("div1").setAttribute("style", "background-color:  rgb(163, 36, 68)")
+            
+            var button=document.getElementById("btn1");
+            button.addEventListener("click", changeColor);
+
+            var changeColor=function(){
+                console.log("Buongiornissimo"); 
+                document.getElementById("div1").setAttribute("style", "background-color:  rgb(163, 36, 68)")
+            }
         </script>
     </body>
 </html>
